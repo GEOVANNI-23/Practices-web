@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mi primara página web usando javascript y bootstrap">
+    <title>PRODUCTOS</title>
+    <!-- Enlace de bootstrap para css -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">INICIO</a>
+    </nav>
+
+    <!-- Aplicación -->
+    <div class="container">
+        <!-- LA APLICACIÓN TENDRA UNA FILA CON PADDIG DE 5 -->
+        <div id="app" class="row mb-5">
+            <div class="col-md-4">
+                <h1>APLICACIÓN USANDO BOOTSTRAP</h1>
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Agregar un Producto</h2>
+                    </div>
+                    <form action="#" id="formulario-productos" class="card-body">
+                        <div class="form-group"> 
+                            <input id="nombre" class="form-control" type="text" placeholder="Nombre del Producto">
+                        </div>
+                        <div class="form-group"> 
+                            <input id="precio" class="form-control" type="number" step="0.01" placeholder="Precio del Producto">
+                        </div>
+                        <div class="form-group"> 
+                            <input id="year" class="form-control" type="number" value="2021" min="2000">
+                        </div>
+                        <button class="btn btn-primary btn-lg" id="btnsubmit">ENVIAR</button>
+                    </form>
+                </div>
+            </div>
+    
+            <div id="lista-productos" class="col-md-8"></div>
+        </div>
+    </div>
+
+  <!-- Enlace de bootstrap para js -->  
+  <script src="js/bootstrap.js"></script>
+
+  <!-- Enlaces de js -->   
+  <script src="js/App.js"></script>
+</body>
+</html>

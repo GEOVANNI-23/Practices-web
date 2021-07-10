@@ -1,0 +1,132 @@
+body{
+    margin: 2%;
+    padding: 0;
+}
+.cabecera{
+    background-color: #000;
+    color:white;
+    padding: 10px;
+}
+.navegacion{
+    border: 1px solid #000;
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    display: flex;
+    position: relative;
+
+}
+.logo{
+    background-image: url("images/fondo5.jpg");
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 10px;
+}
+.enlaces{
+    position: absolute;
+    left: 60%;
+}
+.enlaces a{
+    text-decoration: none;
+    color: #000;
+}
+.foto1{
+
+    background-image: url("images/microfono.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+}
+.letrero{
+    color: aliceblue;
+    font-size: 1.5em;
+}
+.texto{
+    color: aliceblue;
+    width: 370px;
+    text-align: center;
+    border: 1px solid white;
+    margin-top: 100px;
+    margin-left: 20px;
+    letter-spacing: 0.8px;
+}
+.letrero2{
+    margin-top: 10px;
+    text-align: center;
+    border: 1px solid grey;
+}
+
+
+.fotos {
+    display:flex;
+    justify-content: space-between;
+    border:1px solid #000;
+}
+.fotos div{
+    margin: 10px;   
+}
+.fotos img{
+    width: 100%;
+    height: 150px;
+}
+.contenedor2{
+    background-image: url("images/fondo4.jpg");
+}
+.contenedor2 h3{
+    color: aliceblue;
+    font-size: 1.3em;
+    text-align: center;
+}
+.contenedor-padre{
+    display: flex;
+    justify-content: space-between;
+    color:aliceblue;
+    text-align: center;
+    
+}
+.contenedor-padre div{
+    margin: 15px;
+}
+.pie-pagina{
+    background-image: url("images/fondo5.jpg");
+    padding: 10px;
+}
+.pie-pagina h5{
+    color:ghostwhite;
+    font-size: 1em;
+    text-align: center;
+}
+.pie-pagina p{
+    color:grey;
+}
+
+@media(min-width:1150px){
+    .enlaces{
+        position: absolute;
+        left: 80%;
+    }
+    .letrero h1{
+        color: orangered;
+        font-size: 2em;
+    }
+    .letrero{
+        color: aliceblue;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .foto1{
+        background-attachment:fixed;
+    }
+    .texto{
+        color: aliceblue;
+        width: 500px;
+        height: 170px;
+        text-align: center;
+        border: 1px solid white;
+        margin-top: 100px;
+        margin-left: 20px;
+        letter-spacing: 0.8px;
+    }
+}
