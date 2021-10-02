@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PÁGINA PRINCIPAL</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+   <header class="header">
+       <h1 class="title">LISTA DE ALUMNOS</h1>
+   </header>
+   
+   <div class="container mb-5">
+        <div id="app">
+            <div class="row mb-5">
+                <div class="col-6">
+                    <div class="card">
+                        <h2>ALUMNO NUEVO</h2>
+                        <div class="card-body">
+                            <div class="form" id="myform">
+                                <div class="form-control">
+                                    <input type="text" placeholder="NOMBRE" id="name">
+                                </div>
+                                <div class="form-control">
+                                    <input type="text" placeholder="APELLIDO PATERNO" id="ap">
+                                </div>
+                                <div class="form-control">
+                                    <input type="text" placeholder="APELLIDO MATERNO" id="am">
+                                </div>
+                                <div class="form-control">
+                                    <input type="number" min="15" max="99" id="age" value="15">
+                                </div>
+                                <div class="form-control">
+                                    <select name="courses" id="courses">
+                                        <option value="LECTURA">LECTURA</option>
+                                        <option value="MATEMÁTICAS">MATEMÁTICAS</option>
+                                        <option value="COMPUTACIÓN">COMPUTACIÓN</option>
+                                        <option value="INGLÉS">INGLÉS</option>
+                                        <option value="DANZA">DANZA</option>
+                                    </select>
+                                    <div class="form-control">
+                                        <input type="date" id="date" placeholder="FECHA DE INICIO">
+                                    </div>
+                                    <div class="form-control">
+                                        <select name="modalidad" id="course-modality">
+                                            <option value="PRESENCIAL">PRESENCIAL</option>
+                                            <option value="ONLINE">ONLINE</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary" id="btn-add">AGREGAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6" id="list"></div>
+        </div>  
+    </div>
+   </div>
+
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

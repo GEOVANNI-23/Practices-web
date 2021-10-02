@@ -1,0 +1,17 @@
+.header{
+    margin-bottom: 50px;
+    text-align: center;
+}
+.btn,
+input,
+select{
+    width: 100%;
+}
+.form-control{
+    margin-bottom: 3px;
+}
+.btn-radius{
+    width: auto;
+    border-radius: 1em;
+    
+}
